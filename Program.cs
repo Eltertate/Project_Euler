@@ -1,12 +1,11 @@
-using System;
+int count;
+int answer = 0;
 
-namespace HelloWorld
+for (count = 1; count < 1000; count++)
 {
-  class Program
-  {
-    static void Main(string[] args)
+    if (count % 3 == 0 || count % 5 == 0)
     {
-      Console.WriteLine("Hello World!");    
+        answer += count;
     }
-  }
 }
+Console.WriteLine(answer);
